@@ -1,0 +1,8 @@
+Neste trabalho de casa, era pedido para desenvolver o jogo "Adivinha o número". 
+Assim, este código implementa um jogo, onde o utilizador pode escolher entre duas opções: ou tenta adivinhar um número gerado pelo computador, ou o computador tenta adivinhar o número que o utilizador tem em mente.
+
+No início, o programa pergunta ao utilizador se ele prefere adivinhar (opção 1) ou deixar o computador adivinhar (opção 2), com a escolha sendo armazenada numa variável chamada modo. Caso o utilizador escolha a primeira opção, o computador gera um número aleatório entre 1 e 100. O utilizador, então, tem de adivinhar esse número. O programa irá dizer se o palpite do utilizador é maior ou menor do que o número correto e continuará a pedir palpites até que o utilizador acerte. A cada palpite errado, a contagem de tentativas aumenta, e no final o programa informa quantas tentativas foram necessárias para acertar.
+
+Na segunda opção, o utilizador pensa num número entre 0 e 100, e o computador usa um método chamado pesquisa binária para tentar adivinhar o número. A cada palpite, o utilizador indica se o número é maior ou menor do que o sugerido pelo computador, e os limites de busca (superior e inferior) são ajustados de acordo. Este processo repete-se até que o computador adivinhe corretamente, e o programa também contabiliza o número de tentativas necessárias para acertar.
+
+No final de ambas as opções, o jogo termina ao informar quantas tentativas foram feitas para acertar no número. Este código é um exemplo simples de como interagir com o utilizador e utilizar estruturas de repetição e condicionais para criar um jogo.
