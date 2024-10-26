@@ -1,0 +1,11 @@
+Este código implementa o jogo dos 21 fósforos, onde o objetivo é evitar tirar o último fósforo, pois quem o fizer perde o jogo. O jogo começa com 21 fósforos e, em cada rodada, o jogador, seja o utilizador ou o computador, pode retirar entre 1 e 4 fósforos. Os turnos alternam-se até que todos os fósforos sejam retirados, e o jogo termina quando alguém retira o último fósforo, declarando-o como o perdedor.
+
+A função principal, jogo_dos_fosforos(), organiza o fluxo do jogo. Primeiro, o utilizador é solicitado a escolher o modo de jogo, definindo se quer começar a jogar ou se prefere que o computador comece. Esta escolha influencia o valor inicial da variável turno, que alterna entre o "utilizador" e o "computador".
+
+Quando é a vez do utilizador jogar, a função jogada_usuario() é chamada. Ela pede ao utilizador para introduzir o número de fósforos que deseja retirar, garantindo que a jogada seja válida. Se o número for inválido (por exemplo, se for maior que os fósforos disponíveis ou fora do intervalo de 1 a 4), o programa avisa e pede ao utilizador que tente novamente.
+
+Na vez do computador, a função jogada_computador() executa uma jogada estratégica. O computador calcula o número ideal de fósforos a retirar, procurando sempre reduzir o número de fósforos restantes a um múltiplo de 5, o que o coloca em vantagem. Caso não seja possível, o computador retira 1 fósforo como jogada de segurança.
+
+Após cada jogada, seja do utilizador ou do computador, a função verifica_vencedor() é acionada para verificar se os fósforos chegaram a zero, o que significa que o último jogador perdeu. Dependendo de quem jogou por último, o jogo imprime quem foi o perdedor. Se ainda houver fósforos restantes, o turno alterna para o próximo jogador, e o ciclo continua.
+
+Portanto, o jogo dos fósforos prossegue com o jogador e o computador alternando jogadas até que alguém retire o último fósforo, encerrando a partida. O computador segue uma estratégia para tentar garantir a vitória, especialmente se estiver a jogar em segundo lugar, enquanto o utilizador tenta evitar tirar o fósforo final.
